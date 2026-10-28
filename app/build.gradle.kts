@@ -1,4 +1,4 @@
-plugins {
+﻿plugins {
   alias(libs.plugins.android.application)
   alias(libs.plugins.compose.compiler)
   alias(libs.plugins.kotlin.serialization)
@@ -16,7 +16,7 @@ android {
     versionName = "1.0.0"
 
     // Default optimization mode ("OPTIMIZED" on main/optimized branch, "BASELINE" on baseline branch)
-    buildConfigField("String", "DEFAULT_MODE", "\"OPTIMIZED\"")
+    buildConfigField("String", "DEFAULT_MODE", "\"BASELINE\"")
   }
 
   buildTypes {
@@ -86,3 +86,4 @@ dependencies {
   androidTestImplementation(libs.androidx.compose.ui.test.junit4)
   debugImplementation(libs.androidx.compose.ui.test.manifest)
 }
+
