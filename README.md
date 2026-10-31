@@ -8,6 +8,10 @@
 
 ## 1. Giới thiệu Tổng quan
 
+<p align="center">
+  <img src="releases/app_current.png" alt="ImageOptCatalog Live Benchmark Lab" width="380" />
+</p>
+
 Dự án **`ImageOptCatalog`** nghiên cứu lý thuyết, thiết kế kiến trúc và xây dựng một phòng thí nghiệm thực nghiệm trực tiếp (**In-App Image Optimization Benchmark Lab**) trên nền tảng Android nhằm giải quyết bài toán tối ưu hóa hiệu năng tải, lưu trữ đệm (Caching 3 tầng) và hiển thị danh sách hình ảnh lớn ($100 \rightarrow 500 \rightarrow 1.000$ ảnh).
 
 Ứng dụng cho phép chuyển đổi đối chứng tức thì giữa 2 phiên bản:
@@ -22,14 +26,14 @@ Toàn bộ yêu cầu của đề bài được tổ chức đầy đủ và kho
 
 | Mã | Tên Sản phẩm Đầu ra (Deliverable) | Đường dẫn Tài liệu / Mã nguồn trong Repo |
 | :---: | :--- | :--- |
-| **`D1`** | **Báo cáo nghiên cứu lý thuyết (10 Chủ đề)** | [`docs/D1_Bao_Cao_Nghien_Cuu_Ly_Thuyet.md`](file:///d:/University/Phát%20triển%20ứng%20dụng%20di%20động/GKPTUDDD/docs/D1_Bao_Cao_Nghien_Cuu_Ly_Thuyet.md) |
-| **`D2`** | **Tài liệu phân tích và thiết kế hệ thống** | [`docs/D2_Tai_Lieu_Phan_Tich_Thiet_Ke.md`](file:///d:/University/Phát%20triển%20ứng%20dụng%20di%20động/GKPTUDDD/docs/D2_Tai_Lieu_Phan_Tich_Thiet_Ke.md) |
-| **`D3`** | **Ứng dụng Android minh họa (`ImageOptCatalog`)** | [`app/src/main/kotlin/com/university/imageoptimization/`](file:///d:/University/Phát%20triển%20ứng%20dụng%20di%20động/GKPTUDDD/app/src/main/kotlin/com/university/imageoptimization/) |
-| **`D4`** | **Mô-đun tải ảnh và bộ nhớ đệm 3 tầng** | [`docs/D4_Mo_Dun_Tai_Anh_Va_Cache.md`](file:///d:/University/Phát%20triển%20ứng%20dụng%20di%20động/GKPTUDDD/docs/D4_Mo_Dun_Tai_Anh_Va_Cache.md)<br>[`ImageLoaderProvider.kt`](file:///d:/University/Phát%20triển%20ứng%20dụng%20di%20động/GKPTUDDD/app/src/main/kotlin/com/university/imageoptimization/image/ImageLoaderProvider.kt) |
-| **`D5`** | **Hai phiên bản đối chứng (`baseline` vs `optimized`)** | [`OptimizationMode.kt`](file:///d:/University/Phát%20triển%20ứng%20dụng%20di%20động/GKPTUDDD/app/src/main/kotlin/com/university/imageoptimization/image/OptimizationMode.kt) + Nhánh Git `baseline` & `optimized` |
-| **`D6`** | **Bộ kịch bản và kết quả kiểm thử (`TC01` – `TC08`)** | [`docs/D6_Kich_Ban_Va_Ket_Qua_Kiem_Thu.md`](file:///d:/University/Phát%20triển%20ứng%20dụng%20di%20động/GKPTUDDD/docs/D6_Kich_Ban_Va_Ket_Qua_Kiem_Thu.md)<br>[`ImageOptimizationUnitTest.kt`](file:///d:/University/Phát%20triển%20ứng%20dụng%20di%20động/GKPTUDDD/app/src/test/kotlin/com/university/imageoptimization/ImageOptimizationUnitTest.kt) |
-| **`D7`** | **Báo cáo thực nghiệm và phân tích hiệu năng** | [`docs/D7_Bao_Cao_Thuc_Nghiem_Hieu_Nang.md`](file:///d:/University/Phát%20triển%20ứng%20dụng%20di%20động/GKPTUDDD/docs/D7_Bao_Cao_Thuc_Nghiem_Hieu_Nang.md)<br>[`PerformanceTracker.kt`](file:///d:/University/Phát%20triển%20ứng%20dụng%20di%20động/GKPTUDDD/app/src/main/kotlin/com/university/imageoptimization/telemetry/PerformanceTracker.kt) |
-| **`D8`** | **Sản phẩm đóng gói (APK) & Hướng dẫn sử dụng / Demo** | [`docs/D8_Huong_Dan_Su_Dung_Va_Demo.md`](file:///d:/University/Phát%20triển%20ứng%20dụng%20di%20động/GKPTUDDD/docs/D8_Huong_Dan_Su_Dung_Va_Demo.md)<br>`releases/ImageOptCatalog-debug.apk` |
+| **`D1`** | **Báo cáo nghiên cứu lý thuyết (10 Chủ đề)** | [`docs/D1_Bao_Cao_Nghien_Cuu_Ly_Thuyet.md`](docs/D1_Bao_Cao_Nghien_Cuu_Ly_Thuyet.md) |
+| **`D2`** | **Tài liệu phân tích và thiết kế hệ thống** | [`docs/D2_Tai_Lieu_Phan_Tich_Thiet_Ke.md`](docs/D2_Tai_Lieu_Phan_Tich_Thiet_Ke.md) |
+| **`D3`** | **Ứng dụng Android minh họa (`ImageOptCatalog`)** | [`app/src/main/kotlin/com/university/imageoptimization/`](app/src/main/kotlin/com/university/imageoptimization/) |
+| **`D4`** | **Mô-đun tải ảnh và bộ nhớ đệm 3 tầng** | [`docs/D4_Mo_Dun_Tai_Anh_Va_Cache.md`](docs/D4_Mo_Dun_Tai_Anh_Va_Cache.md)<br>[`ImageLoaderProvider.kt`](app/src/main/kotlin/com/university/imageoptimization/image/ImageLoaderProvider.kt) |
+| **`D5`** | **Hai phiên bản đối chứng (`baseline` vs `optimized`)** | [`OptimizationMode.kt`](app/src/main/kotlin/com/university/imageoptimization/image/OptimizationMode.kt) + Nhánh Git `baseline` & `optimized` |
+| **`D6`** | **Bộ kịch bản và kết quả kiểm thử (`TC01` – `TC08`)** | [`docs/D6_Kich_Ban_Va_Ket_Qua_Kiem_Thu.md`](docs/D6_Kich_Ban_Va_Ket_Qua_Kiem_Thu.md)<br>[`ImageOptimizationUnitTest.kt`](app/src/test/kotlin/com/university/imageoptimization/ImageOptimizationUnitTest.kt) |
+| **`D7`** | **Báo cáo thực nghiệm và phân tích hiệu năng** | [`docs/D7_Bao_Cao_Thuc_Nghiem_Hieu_Nang.md`](docs/D7_Bao_Cao_Thuc_Nghiem_Hieu_Nang.md)<br>[`PerformanceTracker.kt`](app/src/main/kotlin/com/university/imageoptimization/telemetry/PerformanceTracker.kt) |
+| **`D8`** | **Sản phẩm đóng gói (APK) & Hướng dẫn sử dụng / Demo** | [`docs/D8_Huong_Dan_Su_Dung_Va_Demo.md`](docs/D8_Huong_Dan_Su_Dung_Va_Demo.md)<br>[`releases/ImageOptCatalog-debug.apk`](releases/ImageOptCatalog-debug.apk) |
 
 ---
 
